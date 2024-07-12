@@ -1,0 +1,83 @@
+/* Reset some default styles for better cross-browser consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles for layout and typography */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+header h1, footer p {
+    margin: 0;
+}
+
+.main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.link-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.link-list li {
+    margin-bottom: 10px;
+}
+
+.link-list a {
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.link-list a:hover {
+    background-color: #f0f0f0;
+}
+
+.image-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding: 10px;
+    }
+    .image-container {
+        flex-direction: column;
+    }
+}
